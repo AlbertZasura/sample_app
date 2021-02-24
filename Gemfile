@@ -13,7 +13,7 @@ gem 'faker', '2.12.0'
 gem 'will_paginate', '3.3.0'
 gem 'bootstrap-will_paginate', '1.0.0'
 gem 'bootstrap-sass', '3.4.1'
-gem 'cloudinary'
+
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -63,7 +63,7 @@ end
 
 group :production do
 gem 'pg', '1.1.4'
-
+gem 'cloudinary'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
