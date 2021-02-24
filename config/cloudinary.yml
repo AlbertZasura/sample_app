@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dmf7kruue
+  api_key: '615122214819755'
+  api_secret: O6G1rAzkiS8mRAGoTCGG4ORBy4o
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: dmf7kruue
+  api_key: '615122214819755'
+  api_secret: O6G1rAzkiS8mRAGoTCGG4ORBy4o
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: dmf7kruue
+  api_key: '615122214819755'
+  api_secret: O6G1rAzkiS8mRAGoTCGG4ORBy4o
+  enhance_image_tag: true
+  static_file_support: false

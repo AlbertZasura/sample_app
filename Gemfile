@@ -5,11 +5,15 @@ ruby '3.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3'
+gem 'image_processing', '1.12.1'
+gem 'mini_magick', '4.11.0'
+gem 'active_storage_validations', '0.8.2'
 gem 'bcrypt', '3.1.13'
 gem 'faker', '2.12.0'
 gem 'will_paginate', '3.3.0'
 gem 'bootstrap-will_paginate', '1.0.0'
 gem 'bootstrap-sass', '3.4.1'
+gem 'cloudinary'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -59,6 +63,8 @@ end
 
 group :production do
 gem 'pg', '1.1.4'
+gem 'cloudinary'
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
