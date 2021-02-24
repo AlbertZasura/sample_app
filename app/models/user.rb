@@ -33,7 +33,7 @@ class User < ApplicationRecord
 
         # Returns true if the given token matches the digest.
     def authenticated?(attribute,token)
-        digest = send("#{attribut}_digest")
+        digest = send("#{attribute}_digest")
         return false if digest.nil?
         BCrypt::Password.new(digest).is_password?(token)
     end
@@ -46,7 +46,8 @@ class User < ApplicationRecord
     
     # Activates an account.
     def activate
-        update_columns(activated: FILL_IN, activated_at: FILL_IN)
+        update_attribute(:activated,true)
+        update_attribute(:activated_at, Time.zone.now)
     end
 
     # Sends activation email.
