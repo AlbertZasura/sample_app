@@ -68,13 +68,13 @@ Rails.application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  host = 'https://rails-lastsample.herokuapp.com'
+  # host = 'https://rails-lastsample.herokuapp.com'
   
-  config.action_mailer.default_url_options = { host: host }
+  # config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
     :user_name => ENV['SENDGRID_USERNAME'],
     :password => ENV['SENDGRID_PASSWORD'],
-    :domain => 'in-v3.mailjet.com',
+    :domain => 'mailjet.com',
     :address => 'in-v3.mailjet.com',
     :port => '587',
     :authentication => :plain,
