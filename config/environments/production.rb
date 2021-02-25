@@ -69,6 +69,7 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
   host = 'https://rails-lastsample.herokuapp.com'
+  
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
     :user_name => ENV['SENDGRID_USERNAME'],
@@ -78,6 +79,8 @@ Rails.application.configure do
     :port => '465',
     :authentication => :plain,
     :enable_starttls_auto => true
+    :openssl_verify_mode: "none"
+
   }
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
