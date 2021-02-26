@@ -71,8 +71,8 @@ Rails.application.configure do
   host = 'https://rails-lastsample.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
-    :user_name => ENV['SENDGRID_USERNAME'],
-    :password => ENV['SENDGRID_PASSWORD'],
+    :user_name => ENV['USERNAME'],
+    :password => ENV['PASSWORD'],
     :domain => 'heroku.com',
     :address => 'mail.smtp2go.com',
     :port => '2525',
