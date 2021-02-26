@@ -74,8 +74,8 @@ Rails.application.configure do
     :user_name => ENV['SENDGRID_USERNAME'],
     :password => ENV['SENDGRID_PASSWORD'],
     :domain => 'heroku.com',
-    :address => 'ggwash.id',
-    :port => '465',
+    :address => 'mail.smtp2go.com',
+    :port => '2525',
     :authentication => :plain,
     :enable_starttls_auto => true,
     :openssl_verify_mode => 'none'
