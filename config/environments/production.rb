@@ -75,7 +75,7 @@ Rails.application.configure do
     :user_name => ENV['SENDGRID_USERNAME'],
     :password => ENV['SENDGRID_PASSWORD'],
     :domain => 'heroku.com',
-    :address => 'in-v3.mailjet.com',
+    :address => 'mail.smtp2go.com',
     :port => '587',
     :authentication => :plain,
     :enable_starttls_auto => true,
