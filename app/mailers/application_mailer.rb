@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'testing@ggwash.id'
+  default from: 'noreply@example.com'
   layout 'mailer'
 end
